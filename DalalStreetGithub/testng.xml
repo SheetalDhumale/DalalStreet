@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+<parameter name ="browser" value ="chrome"/>
+<listeners>
+		<listener class-name= "ai.dalalstreet.utility.ListenerSetup" />
+		<listener class-name="ai.dalalstreet.utility.ExtentReporterNG"/>
+</listeners>
+  <test thread-count="5" name="Regression Test">
+    <classes>
+      <class name="ai.dalalstreet.testBase.TestBase"/>
+      <class name="ai.dalalstreet.testLayer.TestLoginPage"/>
+    </classes>
+  </test> <!-- Regression Test -->
+</suite> <!-- Regression Suite -->
